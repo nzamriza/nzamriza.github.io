@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise27sept</title>
+</head>
+
+<style type="text/css">
+	
+	div#wrapper {
+	    width: 80%;
+	    margin: 0 auto;
+	    background: #4a4545;
+	}
+
+	div#Header {
+	    display: inline-block;
+	    width: 100%;
+	    height: 100px;
+	    background: white;
+	    position: relative;
+	    box-sizing: border-box;
+	
+	}
+
+	
+	div#sidebar {
+	    display: inline-block;
+	    width: 300px;
+	    height: 400px;
+	    background: blue;
+	    margin: 30px;
+	    box-sizing: border-box;
+	    position: relative;
+	    border-bottom-right-radius: 50px;
+	    border-top-left-radius: 50px;
+	    text-align: center;
+
+
+	}
+
+	div#right {
+	    display: inline-block;
+	    width: 602px;
+	    height: 400px;
+	    background: yellowgreen;
+	    margin: 30px 30px 30px 0px;
+	    box-sizing: border-box;
+	    position: absolute;
+	    border-top-left-radius: 50px;
+	    border-bottom-right-radius: 50px;
+	
+	}
+
+
+	div#cubes {
+	    display: inline-block;
+	    width: 100%;
+	    height: 200px;
+	    text-align: center;
+
+	}    
+	  
+	    
+	div#cube1 {
+    width: 160px;
+    height: 160px;
+    background: #22e22a;
+    display: inline-block;
+    margin: 0px 30px 30px 30px;
+    position: relative;
+	border-bottom-left-radius: 20px;
+	
+	}
+
+	div#cube1a {
+	    width: 30px;
+	    height: 30px;
+	    background: white;
+	    border-radius: 50px;
+	    left: -12px;
+	    display: inline-block;
+	    position: absolute;
+	}
+
+
+	div#cube1b {
+	    width: 30px;
+	    height: 30px;
+	    position: absolute;
+	    bottom: 0px;
+	    right: -12px;
+	    display: inline-block;
+	    background: white;
+	    border-radius: 50px;
+	}
+
+	div#cube2 {
+	    width: 160px;
+	    height: 160px;
+	    background: #22e22a;
+	    display: inline-block;
+	    margin: 0px 30px 30px 0px;
+	    position: relative;
+		border-bottom-left-radius: 20px;
+	}
+
+	div#cube2a {
+	    width: 30px;
+	    height: 30px;
+	    background: white;
+	    border-radius: 50px;
+	    position: absolute;
+	    left: -12px;
+	    display: inline-block;
+	}
+
+	div#cube2b {
+	    width: 30px;
+	    height: 30px;
+	    background: white;
+	    border-radius: 50px;
+	    bottom: 0px;
+	    position: absolute;
+	    right: -12px;
+	    display: inline-block;
+	}
+
+
+	div#cube3 {
+	    width: 160px;
+	    height: 160px;
+	    background: #22e22a;
+	    display: inline-block;
+	    margin: 0px 30px 30px 0px;
+	    position: relative;
+	    border-bottom-left-radius: 20px;
+	}
+	
+	div#cube3a {
+	    width: 30px;
+	    height: 30px;
+	    background: whitesmoke;
+	    left: -12px;
+	    border-radius: 50px;
+	    position: absolute;
+	    display: inline-block;
+	}
+
+	div#cube3b {
+	    width: 30px;
+	    height: 30px;
+	    background: whitesmoke;
+	    border-radius: 50px;
+	    right: -12px;
+	    bottom: 0px;
+	    position: absolute;
+	    display: inline-block;
+	}
+
+
+	div#cube4 {
+	    width: 160px;
+	    height: 160px;
+	    background: #22e22a;
+	    display: inline-block;
+	    margin: 0px 30px 30px 0px;
+	    position: relative;
+	    border-bottom-left-radius: 20px;	    
+	
+	}	
+
+	div#cube4a {
+	    width: 30px;
+	    height: 30px;
+	    background: whitesmoke;
+	    left: -12px;
+	    display: inline-block;
+	    position: absolute;
+	    border-radius: 50px;  
+
+	  }   
+
+	div#cube4b {
+	    width: 30px;
+	    height: 30px;
+	    background: whitesmoke;
+	    right: -12px;
+	    bottom: 0px;
+	    display: inline-block;
+	    position: absolute;
+	    border-radius: 50px;
+	}
+
+	div#footer {
+	    width: 100%;
+	    height: 80px;
+	    background: aqua;
+
+
+	}  
+
+	img {
+	    width: 180px;
+	    height: 100px;
+	}    
+
+
+	h4 {
+	    display: inline-block;
+	    top: -25px;
+	    right: -324px;
+	    position: relative;
+	    padding: 4px;
+	    border: 5px #5b5b94 solid;
+	    border-radius: 15px;
+	    background-color: #c0c0c5;
+
+
+	}
+	
+	p {
+	    display: inline-block;
+	    margin: 80px 50px 50px 50px;
+	    text-align: justify;
+	
+	}
+
+	h2 {
+	    display: inline-block;
+	    left: 47px;
+	    top: 10px;
+	    position: absolute;
+
+	}
+
+	span {
+	    display: inline-block;
+	    font-size: small;
+	    font-style: oblique;
+	    position: relative;
+	    right: -8px;
+	    bottom: -5px;
+	}
+	
+	img.social {
+	    width: 50px;
+	    height: 50px;
+	    right: -9px;
+	    bottom: -17px;
+	    display: inline-block;
+	    position: relative;
+
+	}
+
+	div#social {
+	    display: inline-block;
+	}
+	   
+
+	 ul {
+	     width: 100px;
+	     height: 300px;
+	     display: inline-block;
+	     text-align: center;
+	     bottom: -36px;
+	     position: relative;
+	 }
+	 
+	 li {
+	     list-style: none;
+	     text-align: center;
+	     margin: 12px;
+	     display: inline-block;
+	     left: -25px;
+	     position: relative;
+	     background-color: #efdbdb;
+	     padding: 4px;
+	     top: -36px;
+	     border-radius: 2px;
+	 }  
+
+
+</style>
+<body>
+<div id="wrapper">
+<!--start of wrapper-->	
+
+		
+		<div id="Header"><!--start of header-->
+		
+		<img src="http://joomlatemplates.me/wp-content/uploads/school.jpg">
+		<img src="http://blog.oureducation.in/wp-content/uploads/2014/08/Pro-Education.jpg">
+
+			<h4>Sitemap</h4>
+			<h4>Members Login</h4>
+			<h4>Contact Us</h4>
+
+		</div><!--end of header-->
+
+		<div id="sidebar"><!--start of sidebar-->
+		      
+		<ul><!--start of ul-->
+
+		       	<li>Pre Schools</li>
+		       	<li>Year 1</li>
+		       	<li>Year 2</li>
+		       	<li>Year 3</li>
+		       	<li>Year 4</li>
+		       	<li>Year 5</li>
+		       	<li>Year 6</li>
+
+		</ul><!--end of ul-->
+
+
+		</div><!--end of sidebar-->
+
+		<div id="right"><!--start of right-->
+
+		<p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200<br>
+		There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 
+		</p>
+
+		<h2>Classroom Activity</h2>
+
+
+		</div><!--end of right-->
+
+				<div id="cubes"><!--start of cubes-->
+					<div id="cube1">
+					<div id="cube1a"></div>
+					<div id="cube1b"></div>
+
+
+					</div>
+
+					<div id="cube2">
+					<div id="cube2a"></div>
+					<div id="cube2b"></div>
+
+					</div>
+
+					<div id="cube3">
+					<div id="cube3a"></div>
+					<div id="cube3b"></div>
+
+					</div>
+
+					<div id="cube4">
+					<div id="cube4a"></div>
+					<div id="cube4b"></div>
+
+					</div>
+
+
+</div><!--end of cubes-->
+
+<div id="footer"><!--start of footer-->
+
+		<div id="social"><!--start of social-->
+		<img src="https://www.w3newbie.com/wp-content/uploads/facebook.png" class="social">
+		<img src="https://www.w3newbie.com/wp-content/uploads/twitter.png" class="social">
+		<img src="https://www.w3newbie.com/wp-content/uploads/youtube.png" class="social">
+
+		</div><!--start of social-->
+
+		<!--start of span-->
+		<span>We use cookies to ensure that we give you the best experience on our website.If you continue to use this site we will assume that you are happy with it</span><!--end of span-->
+
+
+</div><!--end of footer-->
+
+
+</div><!--end of wrapper-->
+
+</body>
+</html>

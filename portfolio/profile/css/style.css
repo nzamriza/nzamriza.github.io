@@ -1,0 +1,454 @@
+
+
+/* Basic Styles */
+body {
+	background-color:white;
+
+
+
+}
+/*=============================
+	1.Home
+===============================*/
+#home{
+	background: url(../images/home1.png)fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 700px;
+}
+/*coder's name*/
+h1.name {
+    font-family: 'Sacramento', cursive;
+    color: #e4e1df;
+    font-size: 42px;
+    margin-bottom: -59px;
+    margin-top: 40px;
+
+}
+
+header     {
+
+  position:relative; 
+  text-align:center; 
+
+}
+
+header h3  {font-weight:normal; font-size:20px; color:aqua;
+ font-family: 'Open Sans Condensed', sans-serif; 
+  -webkit-user-select:none; 
+     -moz-user-select:none; 
+      -ms-user-select:none; 
+       -o-user-select:none; 
+          user-select:none;
+      
+
+}
+
+header span {
+  display:inline-block;
+
+}
+/*coders picture-center vertical*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+/*=============================
+	2.About
+===============================*/
+
+#about{
+	height:0 auto;
+  box-shadow: inset 0 0 31px #000000;
+}
+#about span{
+  color: yellow;
+  font-size: 45px;
+}
+
+h1.intro {
+    margin-top: 0px;
+    padding-top: 40px;
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 6px 7px rgba(14, 1, 1, 0.68);
+}
+
+p.text {
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 40px;
+}
+
+h3.phrase {
+  font-family: 'Sacramento', cursive;
+    font-size: 1.9em;
+    color: aqua;
+}
+ 
+   
+
+
+/*=============================
+	3.section divider1
+===============================*/
+
+.section-divider1{
+	background: url(../images/tree.jpg)fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+
+h1.inspiration {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #f6f67e;
+    padding-top: 103px;
+}
+
+h5.quote {
+    font-family: sans-serif;
+    color: #dcdbdb;
+}
+
+/*================================
+4. List of Master Skill
+=================================*/
+.skills{
+	background-color: #a2a2a2;
+}
+
+h1.skills {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    color: #f6f67e;
+    padding-top: 30px;
+    text-shadow: 4px 6px 7px #000000;
+}
+h2.skill1 {
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    padding-bottom: 40px;
+}
+
+h2.skill2 {
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    padding-bottom: 40px;
+}
+
+h2.skill3 {
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    padding-bottom: 40px;
+}
+
+h2.skill4 {
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    padding-bottom: 40px;
+}
+
+h2.skill5 {
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    padding-bottom: 40px;
+}
+
+h2.skill6 {
+    font-family: 'Oswald', sans-serif;
+    color: beige;
+    padding-bottom: 40px;
+}
+/*================================
+5. image overlay
+=================================*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content .content-overlay2 {
+  border: 2px solid rgba(255,255,255,0.5);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay, .content:hover .content-overlay2{
+  opacity: 1;
+}
+
+.content:hover .content-overlay2{
+  height: 90%;
+  width: 94%;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.60em;
+  font-family: 'Raleway', sans-serif;
+}
+.col-md-3.col-sm-6.col-xs-12 {
+    padding-right: 0;
+    padding-left: 0;
+}
+/*================================
+6. Your preffered coding advisor
+=================================*/
+.container-fluid {
+    padding-right: 45px;
+    padding-left: 45px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1.header {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    font-size: 2.5em;
+    text-shadow: 3px 6px 7px rgba(130, 125, 125, 0.68);
+}
+
+/*================================
+7. Design Philosophy
+=================================*/
+.divider2{
+	background: url(../images/birds2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	margin-top: 80px;
+}
+.tools i {
+	font-size: 30px;
+	color: #1c83c3;
+  text-shadow: 3px 6px 7px rgba(130, 125, 125, 0.68);
+}
+
+.divider3{
+	background: url(../images/bell.png)fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+}
+/*==================================
+8.Tools
+/*==================================*/
+h1.tools {
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #5bc0de;
+    text-shadow: 3px 6px 7px rgba(74, 71, 71, 0.68);font-size: 2.5em;
+ 
+    
+}
+
+section.tools {
+    width: 100%;
+    padding-bottom: 27px;
+    padding-top: 67px;
+    box-shadow: inset 0 0 26px #000000;
+
+}
+
+h3.star{
+    font-family: 'Oswald', sans-serif;
+    color: grey;
+    padding-bottom: 40px;
+}
+
+/*==================================
+9.Customer's service
+/*==================================*/
+h1.service {
+    margin-top: 130px;
+    font-size: 2.5em;
+    color: #f6f67e;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*==================================
+10.Contact
+/*==================================*/
+section.footer {
+    background-color: #5a5a5a;
+    margin-top: 0px;
+    padding-bottom: 120px;
+}
+h1.contact {
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #f6f67e;
+    font-size: 2.5em;
+    padding-top: 50px;
+    text-shadow :4px 6px 7px #000000;
+    
+  
+}
+   
+/*=======================
+footer center
+========================*/
+
+}
+.footer-center .text-center i{
+    background-color: white;
+    color: #ffffff;
+    font-size: 30px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    vertical-align: middle;
+}
+.footer-center .text-center p{
+  display: inline-block;
+  color: #fff;
+  vertical-align: middle;
+  margin-left:12px;
+}
+
+
+.footer-right .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+ 
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: inherit;
+    line-height: 1;
+    font-family: FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:#bfc1c1;
+}
+
+.footer .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.footer .footer-company-about p{
+  display: block;
+  color:  white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+p.footer-company-about {
+    color: #878b8b;
+    padding-bottom: 10px;
+}
+
+
+
+
+  
+
